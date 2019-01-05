@@ -1,0 +1,40 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-image: url("/res/meeting-background.png");
+    text-align: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 25px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.helper-center-vertical {
+    display: inline-block;
+    height: 25%;
+    vertical-align: middle;
+}
+
+.logo-img {
+    width: 175px;
+    height: auto;
+}
+
+.logo {
+    vertical-align: middle;
+}
