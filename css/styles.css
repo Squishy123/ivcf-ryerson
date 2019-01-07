@@ -89,7 +89,6 @@ a.button {
     left: 0;
     right: 0;
     padding: 25px;
-    height: 75px;
 
     display: flex;
     flex-direction: row;
@@ -97,12 +96,16 @@ a.button {
 }
 
 .nav-trans {
-    transition: background-color 300ms ease-in-out;
+    height: 75px;
+
+    transition: background-color 250ms linear, height 50ms ease;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-solid {
-    transition: background-color 300ms ease-in-out;
+    height: 15px;
+
+    transition: background-color 250ms linear,  height 50ms ease;
     background-color: black;
 }
 
@@ -114,9 +117,20 @@ a.button {
     color: white;
 }
 
-.logo-img {
+.campus-logo {
     width: 175px;
     height: auto;
+}
+
+.national-logo {
+    width: 175px;
+    height: auto;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 
 .logo {
