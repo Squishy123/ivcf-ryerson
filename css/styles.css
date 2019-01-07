@@ -3,11 +3,16 @@
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
+}
+
+.bg-orange {
+    background-color: #fb653c;
+    color: white;
 }
 
 .white {
@@ -23,24 +28,37 @@ p {
 }
 
 .bold {
-    font-weight: bold;
-}
-
-.vh-centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-weight: 900;
 }
 
 .tagline {
-    width: 75vw;
+    width: 85vw;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button {
+    padding: 14px 34px;
+    font-size: 16px;
+    line-height: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.vh-centered {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .panel-1 {
     z-index: -100;
-    position: fixed;
-    top: 0;
 
     background-position: center;
     /* Center the image */
@@ -51,9 +69,17 @@ p {
     background-image: url(/res/ryerson-campus-cover.png);
 
     width: 100%;
-    min-height: 600px;
+    min-height: 700px;
 
     text-align: center;
+}
+
+.panel-2 {
+    margin: 0;
+    height: 400px;
+    width: 100%;
+
+    background-color: white;
 }
 
 
@@ -64,14 +90,23 @@ p {
     right: 0;
     padding: 25px;
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.7);
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nav-link{
+.nav-trans {
+    transition: background-color 300ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-solid {
+    transition: background-color 300ms ease-in-out;
+    background-color: black;
+}
+
+.nav-link {
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
