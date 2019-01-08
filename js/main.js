@@ -35,3 +35,20 @@ window.addEventListener('scroll', (e) => {
 
     ticking = true;
 });
+
+//manage toggle click
+let toggler = document.querySelector('.toggle');
+toggler.addEventListener('click', (e) => {
+    let navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('expand');
+
+    //toggle bars
+    let bar1 = document.querySelector('.bar1');
+    bar1.classList.toggle('toggle');
+
+    let bar2 = document.querySelector('.bar2');
+    bar2.classList.toggle('toggle');
+
+    let bar3 = document.querySelector('.bar3');
+    bar3.classList.toggle('toggle');
+});
