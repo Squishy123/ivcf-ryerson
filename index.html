@@ -9,6 +9,7 @@
 
     <link rel="icon" href="res/favicon.png">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Work+Sans" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -16,13 +17,13 @@
 
 <body>
     <div class="nav nav-trans">
-        <div class="logo">
+        <a class="logo" href="#panel1">
             <img id="national-logo" class="hidden national-logo" src="res/ivcf-national-logo.png">
             <img id="campus-logo" class="campus-logo" src="res/white-logo.png">
-        </div>
+        </a>
         <a class="nav-link" href="#panel2">WHO ARE WE</a>
         <a class="nav-link" href="#panel3">OUR MISSION</a>
-        <a class="nav-link">GET IN TOUCH</a>
+        <a class="nav-link" href="#panel4">GET IN TOUCH</a>
     </div>
     <div class="panel-1" id="panel1">
         <div class="vh-centered tagline">
@@ -72,16 +73,31 @@
                             share the Gospel in their communities.
                         </p>
                     </div>
-                    <div class="arrow-container">
-                        <div class="arrow-down"></div>
-                        <div class="arrow-down"></div>
-                        <div class="arrow-down"></div>
-                    </div>
+                    <a href="#panel4">
+                        <div class="arrow-container">
+                            <div class="arrow-down"></div>
+                            <div class="arrow-down"></div>
+                            <div class="arrow-down"></div>
+                        </div>
+                    </a>
+        </div>
+        <div class="panel-4" id="panel4">
+            <div class="vh-centered tagline">
+                <h1 class="display-3 bold">GET IN TOUCH<h1>
+                        <div class="container">
+                            <p class="p2">Interested? Send us a message or visit our social media.
+                            </p>
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/groups/2218827685/about/"><i class="fab fa-facebook"></i></a>
+                                <a href="https://twitter.com/@RIVCF"><i class="fab fa-twitter-square"></i></a>
+                                <a href="mailto:ivcf.ryerson@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                            </div>
+                        </div>
+            </div>
         </div>
 
-    </div>
 
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
