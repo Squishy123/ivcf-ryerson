@@ -96,7 +96,7 @@ a.button {
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
-    background-image: url(/res/ryerson-campus-cover.png);
+    background-image: url(res/ryerson-campus-cover.png);
 
     width: 100%;
     min-height: 700px;
