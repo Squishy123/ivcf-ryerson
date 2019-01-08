@@ -5,7 +5,7 @@ let ticking = false;
 window.addEventListener('scroll', (e) => {
     scroll_position = window.scrollY;
 
-    if(!ticking) {
+    if (!ticking) {
         window.requestAnimationFrame(() => {
             //change opacity of nav
             let nav = document.querySelector('.nav');
@@ -15,7 +15,7 @@ window.addEventListener('scroll', (e) => {
             let campusLogo = document.querySelector('#campus-logo');
 
 
-            if(scroll_position != 0) {
+            if (scroll_position != 0) {
                 nav.classList.replace("nav-trans", "nav-solid");
 
                 nationalLogo.classList.remove('hidden');
@@ -39,6 +39,41 @@ window.addEventListener('scroll', (e) => {
 //manage toggle click
 let toggler = document.querySelector('.toggle');
 toggler.addEventListener('click', (e) => {
+    let navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('expand');
+
+    //toggle bars
+    let bar1 = document.querySelector('.bar1');
+    bar1.classList.toggle('toggle');
+
+    let bar2 = document.querySelector('.bar2');
+    bar2.classList.toggle('toggle');
+
+    let bar3 = document.querySelector('.bar3');
+    bar3.classList.toggle('toggle');
+
+});
+
+let links = document.querySelectorAll('.nav-link');
+links.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        let navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('expand');
+    
+        //toggle bars
+        let bar1 = document.querySelector('.bar1');
+        bar1.classList.toggle('toggle');
+    
+        let bar2 = document.querySelector('.bar2');
+        bar2.classList.toggle('toggle');
+    
+        let bar3 = document.querySelector('.bar3');
+        bar3.classList.toggle('toggle');
+    });
+});
+
+//logo listener
+document.querySelector('.logo').addEventListener('click', (e) => {
     let navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('expand');
 
