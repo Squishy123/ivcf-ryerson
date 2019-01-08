@@ -48,10 +48,6 @@ p {
 /* smaller than 1000px */
 @media only screen and (max-width : 999px) {
     .display-1 {
-        font-size: 12vw;
-    }
-
-    .display-3 {
         font-size: 10vw;
     }
 
