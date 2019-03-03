@@ -1,0 +1,49 @@
+.navbarContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 50px;
+    .navbar {
+        color: white;
+        z-index: 100;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        .pages {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            .navbarLink {
+                position: relative;
+                width: 100%;
+                margin-right: 25px;
+                font-weight: 800;
+                font-size: 18px;
+                font-family: 'Montserrat', sans-serif;
+                padding: 5px;
+                border-radius: 5px;
+
+                transition: .25s linear;
+            }
+            .navbarLink:hover {
+                background-color: white;
+                color: black;
+                transition: .25s linear;
+            }
+        }
+        .logoContainer {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            .logo {
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+}

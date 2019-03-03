@@ -1,0 +1,18 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 300px;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.sidebar::before {
+    position: absolute;
+    content: " ";
+    width: 30px;
+    height: 50px;
+    left: 300px;
+    top: 0;
+    background-color: cornflowerblue;
+}
