@@ -27,7 +27,7 @@ export default class Navbar extends React.Component {
                     <div className={`${styles.pages} ${(this.state.menuExpanded) ? styles.pagesExpanded : ""}`}>
                         {this.props.pages.map((p) => (
                             <Link href={p.href} key={p.name}>
-                                <p className={styles.navbarLink}>{p.name}</p>
+                                <a className={styles.navbarLink}>{p.name}</a>
                             </Link>
                         ))}
                     </div>

@@ -1,0 +1,128 @@
+@import 'media.scss';
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+}
+
+a, p {
+    font-family: Montserrat, sans-serif;
+}
+
+@include sm {
+    .display1 {
+        font-size: 36px;
+    }
+
+    .display2 {
+        font-size: 32px;
+    }
+
+    .subtitle2 {
+        font-size: 22px;
+    }
+
+    .subtitle3 {
+        font-size: 18px;
+    }
+
+    .subtitle4 {
+        font-size: 16px;
+    }
+
+    .para2 {
+        font-size: 18px;
+    }
+
+    .para3 {
+        font-size: 14px;
+    }
+}
+
+@include md {
+    .display1 {
+        font-size: 48px;
+    }
+
+    .display2 {
+        font-size: 36px;
+    }
+    .subtitle2 {
+        font-size: 28px;
+    }
+
+    .subtitle3 {
+        font-size: 22px;
+    }
+
+    .subtitle4 {
+        font-size: 18px;
+    }
+
+    .para2 {
+        font-size: 20px;
+    }
+
+    .para3 {
+        font-size: 14px;
+    }
+}
+
+@include lg {
+    .display1 {
+        font-size: 60px;
+    }
+
+    .display2 {
+        font-size: 48px;
+    }
+
+    .subtitle2 {
+        font-size: 30px;
+    }
+
+    .subtitle3 {
+        font-size: 28px;
+    }
+
+    .subtitle4 {
+        font-size: 22px;
+    }
+
+    .para2 {
+        font-size: 22px;
+    }
+
+    .para3 {
+        font-size: 16px;
+    }
+}
+
+@include xl {
+    .display1 {
+        font-size: 72px;
+    }
+
+    .display2 {
+        font-size: 60px;
+    }
+
+    .subtitle2 {
+        font-size: 36px;
+    }
+
+    .subtitle3 {
+        font-size: 30px;
+    }
+
+    .subtitle4 {
+        font-size: 26px;
+    }
+
+    .para2 {
+        font-size: 24px;
+    }
+
+    .para3 {
+        font-size: 18px;
+    }
+}
