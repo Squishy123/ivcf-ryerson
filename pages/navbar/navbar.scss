@@ -1,9 +1,84 @@
+//breakpoint variables
+//small tablets and large smartphones (landscape)
+$screen-sm-min: 576px;
+//small tablets (portrait)
+$screen-md-min: 768px;
+//tablets and small desktops
+$screen-lg-min: 922px;
+//large tablets and desktops
+$screen-xl-min: 1200px;
+//mixins for breakpoints
+@mixin sm {
+    @media (min-width: ($screen-sm-min)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media(min-width: ($screen-md-min)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media(min-width: ($screen-lg-min)) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media(min-width: ($screen-xl-min)) {
+        @content;
+    }
+}
+
+@mixin above($screen) {
+    @media(min-width: ($screen)) {
+        @content;
+    }
+}
+
+@mixin below($screen) {
+    @media(max-width: ($screen)) {
+        @content;
+    }
+}
+
 .navbarContainer {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     min-height: 50px;
+    @include below($screen-sm-min) {
+        .toggler {
+            position: fixed;
+            top: 30px;
+            right: 25px;
+            .bar1,
+            .bar2,
+            .bar3 {
+                width: 25px;
+                height: 3px;
+                margin: 4px 0;
+                border-radius: 3px;
+                background-color: #fff;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+        }
+        .toggler.menuExpand {
+            .bar1 {
+                transform: rotate(-45deg) translate(-3px, 3px);
+            }
+            .bar2 {
+                opacity: 0;
+            }
+            .bar3 {
+                transform: rotate(45deg) translate(-7px, -7px);
+            }
+        }
+    }
     .navbar {
         color: white;
         z-index: 100;
@@ -13,28 +88,63 @@
         align-content: center;
         justify-content: space-between;
         .pages {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
             .navbarLink {
-                position: relative;
-                width: 100%;
-                margin-right: 25px;
                 font-weight: 800;
                 font-size: 18px;
                 font-family: 'Montserrat', sans-serif;
-                padding: 5px;
-                border-radius: 5px;
+            }
+            @include sm {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
 
-                transition: .25s linear;
+                .navbarLink {
+                    position: relative;
+                    width: 100%;
+                    margin-right: 25px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    transition: .25s linear;
+                }
+                .navbarLink:hover {
+                    background-color: white;
+                    color: black;
+                    transition: .25s linear;
+                }
             }
-            .navbarLink:hover {
-                background-color: white;
-                color: black;
+            @include below($screen-sm-min) {
+                width: 30vw;
+                height: 0%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                opacity: 0;
                 transition: .25s linear;
+
+                .navbarLink {
+                    margin: auto;
+                    padding: 10px;
+                }
             }
+      
         }
+        .pagesExpanded.pages {
+            position: fixed;
+            height: 100%;
+            top: 0;
+            right: 0;
+            opacity: 1;
+            transition: .25s linear;
+        }
+
+
+
+
         .logoContainer {
             display: flex;
             flex-direction: column;
