@@ -15,7 +15,7 @@ export default class PageHead extends React.Component {
 
                 <link rel="icon" href="res/favicon.png"/>
 
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+                <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
                 <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Work+Sans|Raleway" rel="stylesheet"/>
                 <link href="css/styles.css" rel="stylesheet"/>

@@ -29,11 +29,23 @@ export default () => (
             </div>
             <div className={styles.hero2}>
                 <div className={styles.panel}>
-                <h1 className={styles.display2}>What We Do</h1>
-                    <p className={styles.subtitle2}>
-                        Meet with us on a weekly basis for Bible Study and Prayer where we dig deeper into the Word to uncover truths and how we can live it out on a daily basis.
-                        Each semester we focus on a different theme, topic, or book in the Bible, but we tailor each individual study so that if you’ve missed one you are still able to and welcome to participate.
-                </p>
+                    <h1 className={styles.display2}>What We Do</h1>
+                    <div className={styles.row}>
+                        <div className={styles.item}>
+                        <i className={"icon fas fa-thumbs-up fa-4x"}/>
+                            <p className={styles.para2}>
+                                Meet with us on a weekly basis for Bible Study and Prayer where we dig deeper into the Word to uncover truths and how we can live it out on a daily basis.
+                            </p>
+                        </div>
+                        <div className={styles.item}>
+                        <i className={"icon fas fa-bible fa-4x"}/>
+                            <p className={styles.para2}>
+                            Each semester we focus on a different theme, topic, or book in the Bible, but we tailor each individual study so that if you’ve missed one you are still able to and welcome to participate. 
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
