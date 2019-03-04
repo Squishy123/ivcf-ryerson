@@ -10,7 +10,7 @@ export default class PageHead extends React.Component {
             <Head>
                 <meta charset="utf-8"/>
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <title>IVCF | RU</title>
+                <title>IVCF | Ryerson University</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <link rel="icon" href="res/favicon.png"/>

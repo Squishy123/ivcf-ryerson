@@ -1,0 +1,22 @@
+@import '../colors';
+@import '../fonts';
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+
+    transition: .25s linear;
+
+    * {
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+
+    transition: .25s linear;
+}
