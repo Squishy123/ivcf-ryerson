@@ -8,10 +8,15 @@
     color: white;
 
     transition: .25s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     * {
         font-family: "Raleway", sans-serif;
         font-weight: bold;
+        margin: auto;
     }
 }
 
