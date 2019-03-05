@@ -24,7 +24,7 @@ export default () => (
             <div className={styles.hero1}>
                 <div className={styles.panel}>
                     <h1 className={styles.display1}>IVCF at Ryerson University</h1>
-                    <Button><p className={styles.subtitle2}>Visit Us On Campus</p></Button>
+                    <Button href={"/about"}><p className={styles.subtitle2}>Visit Us On Campus</p></Button>
                 </div>
             </div>
             <div className={styles.hero2}>

@@ -10,9 +10,9 @@ export default class Button extends React.Component {
     render() {
         return (
             <Link href={this.props.href}>
-                <div className={styles.button}>
+                <a className={styles.button}>
                     {this.props.children}
-                </div>
+                </a>
             </Link>
         )
     }

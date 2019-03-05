@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
     }
 
     componentDidMount() {
-        this.body = React.createRef();
+        this.body = document.querySelector('body');
 
         //add listener for resets
         this.mediaCheck = window.matchMedia('(min-width: 576px)').addListener(this.changeView)
