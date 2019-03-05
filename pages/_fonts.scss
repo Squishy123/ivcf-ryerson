@@ -10,15 +10,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
 }
 
-@include sm {
+/*
+@include below($screen-sm-min) {
     .display1 {
         font-size: 36px;
     }
@@ -46,9 +46,9 @@ p {
     .para3 {
         font-size: 14px;
     }
-}
+}*/
 
-@include md {
+@include below($screen-sm-min) {
     .display1 {
         font-size: 48px;
     }
@@ -77,7 +77,7 @@ p {
     }
 }
 
-@include lg {
+@include sm {
     .display1 {
         font-size: 60px;
     }
@@ -107,7 +107,7 @@ p {
     }
 }
 
-@include xl {
+@include md {
     .display1 {
         font-size: 72px;
     }
