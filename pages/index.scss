@@ -14,33 +14,7 @@
     height: auto;
 }
 
-.hero1 {
-    @include angle(after, false, 3deg);
-    background-color: $darkblue;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding: 20px;
-    .panel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: 10px;
-        text-align: center;
-
-        h1 {
-            margin-bottom: 25px;
-        }
-    }
-}
-
-.hero2 {
+.hero {
     @include sm {
         margin-top: 200px;
     }
@@ -49,67 +23,7 @@
         margin-top: 100px;
     }
 
-    @include angle(both, false, 2.5deg);
     min-height: 300px;
-    background-color: cornflowerblue;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    .panel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        
-        @include sm {
-            padding: 50px;
-        }
-
-        @include below($screen-sm-min) {
-            padding: 10px;
-        }
-
-       
-        .row {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-           
-            @include md {
-                flex-direction: row;
-                align-items: flex-start;
-                max-width: 700px;
-            }
-
-            @include below($screen-md-min) {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            * {
-                padding: 15px ;
-            }
-        }
-    }
-}
-
-.hero3 {
-    @include sm {
-        margin-top: 200px;
-    }
-
-    @include below($screen-sm-min) {
-        margin-top: 100px;
-    }
-
-    @include angle(both, false, 2.5deg);
-    min-height: 300px;
-    background-color: yellowgreen;
-    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,6 +43,10 @@
 
         @include below($screen-sm-min) {
             padding: 10px;
+        }
+
+        .h1 {
+            text-align: center;
         }
     }
     .row {
@@ -141,7 +59,7 @@
             align-items: flex-start;
             .item {
                 margin: 25px;
-                max-width: 300px;
+                max-width: 500px;
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
@@ -173,11 +91,35 @@
     }
 }
 
-.hero4 {
-    @include angle(before, true, 3deg);
+.hero1 {
+    margin-top: 0;
+    height: 100vh;
+    @include angle(after, false, 3deg);
+    color: white;
     background-color: $darkblue;
-    min-height: 300px;
+}
 
+.hero2 {
+    @include angle(both, false, 2.5deg);
+    min-height: 300px;
+    background-color: $brightpurple;
+    color: white;
+}
+
+.hero3 {
+    @include angle(both, true, 2.5deg);
+    background-color: $brightpink;
+    color: white;
+}
+
+.hero4 {
+    @include angle(both, false, 2.5deg);
+    background-color: $cyanblue;
+    color: white;
+    min-height: 300px;
+}
+
+.footer{
     @include sm {
         margin-top: 200px;
     }
@@ -185,4 +127,19 @@
     @include below($screen-sm-min) {
         margin-top: 100px;
     }
+
+    @include angle(before, true, 1.5deg);
+
+    background-color: $darkblue;
+    color: white;
+
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: center;
+    padding: 15px;
 }

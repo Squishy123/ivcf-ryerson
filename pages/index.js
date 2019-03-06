@@ -10,6 +10,8 @@ import PageHead from './pagehead/pagehead.js';
 
 import Button from './button/button.js';
 
+import ScrollNav from './scrollnav/scrollnav.js';
+
 export default () => (
     <div>
         <PageHead />
@@ -19,23 +21,27 @@ export default () => (
             { href: "/contact", name: "contact" }
         ]} logoSRC={"/static/ivcf-national-logo.png"}
         />
+        <ScrollNav/>
 
         <div className={styles.page}>
-            <div className={styles.hero1}>
+            <div className={`${styles.hero} ${styles.hero1}`}>
                 <div className={styles.panel}>
                     <h1 className={styles.display1}>IVCF Ryerson</h1>
                     <Button href={"/about"}><p className={styles.subtitle2}>Visit Us On Campus</p></Button>
                 </div>
             </div>
-            <div className={styles.hero2}>
+            <div className={`${styles.hero} ${styles.hero2}`}>
                 <div className={styles.panel}>
                     <h1 className={styles.display2}>Who Are We</h1>
                     <div className={styles.row}>
-                        <p className={styles.para2}>Here at InterVarsity Christian Fellowship at Ryerson University, we create Christian communities on campus where students can explore, discover, and deepen their faith, develop friendships, and make a difference in the world.</p>
+                        <div className={styles.item}>
+                            <i class="fas fa-globe-americas fa-4x" />
+                            <p className={styles.para2}>Here at InterVarsity Christian Fellowship at Ryerson University, we create Christian communities on campus where students can explore, discover, and deepen their faith, develop friendships, and make a difference in the world.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className={styles.hero3}>
+            <div className={`${styles.hero} ${styles.hero3}`}>
                 <div className={styles.panel}>
                     <h1 className={styles.display2}>What We Do</h1>
                     <div className={styles.row}>
@@ -56,9 +62,24 @@ export default () => (
 
                 </div>
             </div>
+            <div className={`${styles.hero} ${styles.hero4}`}>
+                <div className={styles.panel}>
+                    <h1 className={styles.display2}>Our Calendar</h1>
+                    <div className={styles.row}>
+                        <div className={styles.item}>
+                            <i className={"icon far fa-calendar-alt fa-4x"} />
+                            <p className={styles.para2}>
+                                Join us every Wednesday at 12pm to 2pm & Thursday at 6pm to 8pm.
+                                <br />Stay Tuned for Social Events and Activities.
+                            </p>
+                        </div>
+                    </div>
 
-            <div className={styles.hero4}>
+                </div>
+            </div>
 
+            <div className={`${styles.footer}`}>
+                <p className={styles.para3}>@2019 Inter-Varsity Christian Fellowship Ryerson</p>
             </div>
         </div>
     </div>
