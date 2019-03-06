@@ -133,10 +133,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
     a {
+        transform: scale(1);
         color: white;
         transition: .25s linear;
     }
     a:hover {
+        transform: scale(1.5);
         color: $darkblue;
         transition: .25s linear;
     }
