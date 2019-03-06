@@ -114,9 +114,35 @@
 
 .hero4 {
     @include angle(both, false, 2.5deg);
+    background-color: $tangerine;
+    color: white;
+    min-height: 300px;
+}
+
+.hero5 {
+    @include angle(both, false, 2.5deg);
     background-color: $cyanblue;
     color: white;
     min-height: 300px;
+
+}
+
+.socialMedia {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+        color: white;
+        transition: .25s linear;
+    }
+
+    a:hover {
+        color: $darkblue;
+        transition: .25s linear;
+    }
 }
 
 .footer{

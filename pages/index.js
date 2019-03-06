@@ -10,6 +10,8 @@ import PageHead from './pagehead/pagehead.js';
 
 import Button from './button/button.js';
 
+import Link from 'next/link';
+
 import ScrollNav from './scrollnav/scrollnav.js';
 
 export default () => (
@@ -21,7 +23,7 @@ export default () => (
             { href: "/contact", name: "contact" }
         ]} logoSRC={"/static/ivcf-national-logo.png"}
         />
-        <ScrollNav/>
+        <ScrollNav />
 
         <div className={styles.page}>
             <div className={`${styles.hero} ${styles.hero1}`}>
@@ -74,7 +76,35 @@ export default () => (
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
 
+            <div className={`${styles.hero} ${styles.hero5}`}>
+                <div className={styles.panel}>
+                    <h1 className={styles.display2}>Get In Touch</h1>
+                    <div className={styles.row}>
+                        <div className={styles.item}>
+                            <i class="far fa-hand-peace fa-4x" />
+                            <p className={styles.para2}>
+                                Have any questions or just want to chat?
+                                Send us an email at ivcf@ryerson.ca or connect with us on any of our social media accounts.
+                            </p>
+                            <div className={styles.socialMedia}>
+                                <a href="https://www.facebook.com/groups/2218827685/about/">
+                                    <i className="fab fa-facebook fa-3x" />
+                                </a>
+                                <a href="https://twitter.com/@RIVCF">
+                                    <i className="fab fa-twitter-square fa-3x" />
+                                </a>
+                                <a href="https://www.instagram.com/ivcf.ryerson/?hl=en">
+                                    <i class="fab fa-instagram fa-3x" />
+                                </a>
+                                <a href="mailto:ivcf.ryerson@gmail.com">
+                                    <i className="fas fa-envelope-square fa-3x" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
