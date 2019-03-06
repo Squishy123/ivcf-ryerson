@@ -1,13 +1,13 @@
 @import '../colors';
 
 .scrollNav {
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     right: 25px;
     bottom: 100px;
     width: 40px;
     height: 40px;
-    background-color: cornflowerblue;
+    background-color: #2a0afa;
     opacity: 0.75;
     border-radius: 3px;
 

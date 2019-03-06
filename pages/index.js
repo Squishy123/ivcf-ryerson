@@ -37,7 +37,7 @@ export default () => (
                     <h1 className={styles.display2}>Who Are We</h1>
                     <div className={styles.row}>
                         <div className={styles.item}>
-                            <i class="fas fa-globe-americas fa-4x" />
+                            <i className="fas fa-globe-americas fa-4x" />
                             <p className={styles.para2}>Here at InterVarsity Christian Fellowship at Ryerson University, we create Christian communities on campus where students can explore, discover, and deepen their faith, develop friendships, and make a difference in the world.</p>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ export default () => (
                     <h1 className={styles.display2}>Get In Touch</h1>
                     <div className={styles.row}>
                         <div className={styles.item}>
-                            <i class="far fa-hand-peace fa-4x" />
+                            <i className="far fa-hand-peace fa-4x" />
                             <p className={styles.para2}>
                                 Have any questions or just want to chat?
                                 Send us an email at ivcf@ryerson.ca or connect with us on any of our social media accounts.
@@ -97,7 +97,7 @@ export default () => (
                                     <i className="fab fa-twitter-square fa-3x" />
                                 </a>
                                 <a href="https://www.instagram.com/ivcf.ryerson/?hl=en">
-                                    <i class="fab fa-instagram fa-3x" />
+                                    <i className="fab fa-instagram fa-3x" />
                                 </a>
                                 <a href="mailto:ivcf.ryerson@gmail.com">
                                     <i className="fas fa-envelope-square fa-3x" />
