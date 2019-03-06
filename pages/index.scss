@@ -100,20 +100,20 @@ body {
 }
 
 .hero2 {
-    @include angle(both, false, 2.5deg);
+    @include angle(both, true, 2.5deg);
     min-height: 300px;
     background-color: $brightpurple;
     color: white;
 }
 
 .hero3 {
-    @include angle(both, true, 2.5deg);
+    @include angle(both, false, 2.5deg);
     background-color: $brightpink;
     color: white;
 }
 
 .hero4 {
-    @include angle(both, false, 2.5deg);
+    @include angle(both, true, 2.5deg);
     background-color: $tangerine;
     color: white;
     min-height: 300px;
